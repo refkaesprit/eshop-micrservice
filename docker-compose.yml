@@ -17,7 +17,7 @@ services:
           microservices-network:
 
   discoveryServer:
-    build: ./discovery-server
+    build: .\discovery-server
     container_name: "discovery-server"
     image: eureka
     ports:
@@ -26,7 +26,7 @@ services:
       microservices-network:
 
   configServer:
-    build: ./config-server
+    build: .\config-server
     container_name: "config-server"
     image: config
     ports:
@@ -35,7 +35,7 @@ services:
       microservices-network:
 
   apiGateway:
-    build: ./api-gateway
+    build: .\api-gateway
     container_name: "api-gateway"
     image: gateway
     ports:
@@ -51,7 +51,7 @@ services:
       - keycloak
 
   inventoryService:
-    build: ./inventory-service
+    build: .\inventory-service
     image: inventory
     container_name: "inventory-service"
     ports:
@@ -66,7 +66,7 @@ services:
       - apiGateway
 
   orderService:
-    build: ./order-service
+    build: .\order-service
     image: order
     container_name: "order-service"
     ports:
@@ -81,7 +81,7 @@ services:
       - apiGateway
 
   productService:
-    build: ./product-service
+    build: .\product-service
     container_name: "product-service"
     image: product
     ports:
@@ -92,8 +92,20 @@ services:
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-server:8761/eureka/
       - TEST_CONFIG=testme
     depends_on:
+      - apiGateway      
+  authentificationService:
+    build: .\authentification-service
+    container_name: "authentification-service"
+    image: authentification
+    ports:
+      - "8084:8084"
+    networks:
+      microservices-network:
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-server:8761/eureka/
+      - TEST_CONFIG=testme
+    depends_on:
       - apiGateway
-
   keycloak:
     image: quay.io/keycloak/keycloak:18.0.0
     container_name: "keycloak"
