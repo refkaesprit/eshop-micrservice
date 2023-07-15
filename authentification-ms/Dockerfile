@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM adoptopenjdk/openjdk11:latest
 EXPOSE 8081
-ADD /target/authentification-0.0.1-SNAPSHOT.jar authentification.jar
+COPY microservicesUser-0.0.1.jar authentification.jar
 ENTRYPOINT ["java", "-jar", "authentification.jar"]

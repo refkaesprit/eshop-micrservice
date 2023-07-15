@@ -94,7 +94,7 @@ services:
     depends_on:
       - apiGateway      
   authentificationService:
-    build: .\authentification-service
+    build: .\authentification-ms
     container_name: "authentification-service"
     image: authentification
     ports:
@@ -123,13 +123,13 @@ services:
         microservices-network:
 
   docker-frontend:
-    build: ./microservices-frontend
+    build: .\microservices-frontend
     ports:
       - '4201:4200'
     volumes:
       - ./microservices-frontend/src:/frontend/src
   basketService:
-    build: ./basket-service
+    build: .\basket-service
     image: node-app
     environment:
       - MONGODB_URL=mongodb://mongodb:27017
@@ -150,7 +150,31 @@ services:
       - dbdata6:/data/db
     networks:
       - microservices-network
-  
+  catalogueservice:
+    build:
+      context: ./catalogue.service
+      dockerfile: Dockerfile
+    image: "catalogueservice"
+    container_name: catalogueservice
+    restart: "on-failure"
+    ports:
+      - "8014:8014"
+    depends_on:
+      - mysql
+    environment:
+      eureka.client.serviceUrl.defaultZone: http://discovery-server:8761/eureka/
+    networks:
+      - microservices-network
+  mysql:
+    container_name: mysql
+    image: "mysql"
+    restart: "on-failure"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - '/home/mysql-data:/var/lib/mysql'
+    networks:
+      - microservices-network
 volumes:
   dbdata6:
 networks:
