@@ -1,0 +1,8 @@
+/home/pyxis2021/microservices-parent/product-service/src/main/java/com/esprit/productservice/service/ProductService.java
+/home/pyxis2021/microservices-parent/product-service/src/main/java/com/esprit/productservice/dto/ProductResponse.java
+/home/pyxis2021/microservices-parent/product-service/src/main/java/com/esprit/productservice/ProductServiceApplication.java
+/home/pyxis2021/microservices-parent/product-service/src/main/java/com/esprit/productservice/dto/ProductRequest.java
+/home/pyxis2021/microservices-parent/product-service/src/main/java/com/esprit/productservice/controller/ProductController.java
+/home/pyxis2021/microservices-parent/product-service/src/main/java/com/esprit/productservice/model/Product.java
+/home/pyxis2021/microservices-parent/product-service/src/main/java/com/esprit/productservice/config/RestServiceCorsApplication.java
+/home/pyxis2021/microservices-parent/product-service/src/main/java/com/esprit/productservice/repository/ProductRepository.java

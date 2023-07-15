@@ -1,0 +1,10 @@
+/home/pyxis2021/microservices-parent/order-service/src/main/java/com/esprit/orderservice/dto/OrderRequest.java
+/home/pyxis2021/microservices-parent/order-service/src/main/java/com/esprit/orderservice/model/OrderLineItems.java
+/home/pyxis2021/microservices-parent/order-service/src/main/java/com/esprit/orderservice/controller/OrderController.java
+/home/pyxis2021/microservices-parent/order-service/src/main/java/com/esprit/orderservice/dto/OrderLineItemsDto.java
+/home/pyxis2021/microservices-parent/order-service/src/main/java/com/esprit/orderservice/model/Order.java
+/home/pyxis2021/microservices-parent/order-service/src/main/java/com/esprit/orderservice/config/WebConfig.java
+/home/pyxis2021/microservices-parent/order-service/src/main/java/com/esprit/orderservice/repository/OrderRepository.java
+/home/pyxis2021/microservices-parent/order-service/src/main/java/com/esprit/orderservice/service/OrderService.java
+/home/pyxis2021/microservices-parent/order-service/src/main/java/com/esprit/orderservice/OrderServiceApplication.java
+/home/pyxis2021/microservices-parent/order-service/src/main/java/com/esprit/orderservice/dto/InventoryResponse.java
