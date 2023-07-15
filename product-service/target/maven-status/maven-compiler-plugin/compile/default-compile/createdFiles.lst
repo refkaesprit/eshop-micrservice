@@ -1,0 +1,11 @@
+com/esprit/productservice/config/RestServiceCorsApplication.class
+com/esprit/productservice/dto/ProductRequest.class
+com/esprit/productservice/repository/ProductRepository.class
+com/esprit/productservice/model/Product$ProductBuilder.class
+com/esprit/productservice/dto/ProductRequest$ProductRequestBuilder.class
+com/esprit/productservice/dto/ProductResponse.class
+com/esprit/productservice/service/ProductService.class
+com/esprit/productservice/ProductServiceApplication.class
+com/esprit/productservice/dto/ProductResponse$ProductResponseBuilder.class
+com/esprit/productservice/model/Product.class
+com/esprit/productservice/controller/ProductController.class
