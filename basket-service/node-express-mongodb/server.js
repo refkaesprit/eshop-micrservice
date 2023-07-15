@@ -54,7 +54,7 @@ instance: {
   eureka: {
     host: '197.26.19.239',
     port: '8761',
-    servicePath: '/eureka/apps/'
+    servicePath: '/eureka/'
   },
 });
 
