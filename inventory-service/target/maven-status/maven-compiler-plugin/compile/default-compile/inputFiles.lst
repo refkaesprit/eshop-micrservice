@@ -1,0 +1,6 @@
+/home/pyxis2021/microservices-parent/inventory-service/src/main/java/com/esprit/inventoryservice/dto/InventoryResponse.java
+/home/pyxis2021/microservices-parent/inventory-service/src/main/java/com/esprit/inventoryservice/model/Inventory.java
+/home/pyxis2021/microservices-parent/inventory-service/src/main/java/com/esprit/inventoryservice/controller/InventoryController.java
+/home/pyxis2021/microservices-parent/inventory-service/src/main/java/com/esprit/inventoryservice/repository/InventoryRepository.java
+/home/pyxis2021/microservices-parent/inventory-service/src/main/java/com/esprit/inventoryservice/service/InventoryService.java
+/home/pyxis2021/microservices-parent/inventory-service/src/main/java/com/esprit/inventoryservice/InventoryServiceApplication.java

@@ -1,0 +1,7 @@
+com/esprit/inventoryservice/InventoryServiceApplication.class
+com/esprit/inventoryservice/service/InventoryService.class
+com/esprit/inventoryservice/dto/InventoryResponse.class
+com/esprit/inventoryservice/controller/InventoryController.class
+com/esprit/inventoryservice/repository/InventoryRepository.class
+com/esprit/inventoryservice/dto/InventoryResponse$InventoryResponseBuilder.class
+com/esprit/inventoryservice/model/Inventory.class
